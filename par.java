@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package numeros.seleccionados;
+package claPM;
 
 /**
  *
@@ -18,11 +18,22 @@ public class par {
         int x, y, z;
         char c;
         
-        x = cad2.length();
-        z = cad2.indexOf('s');
-        z = cad2.indexOf("jueves");
+        x = cad2.length();//tamaño de la cadena
+        z = cad2.indexOf('s');//busqueda de un caracter
+        z = cad2.indexOf("jueves");//busqueda de una cadena
         b = cad2.equals(cad3);
-        h = cad2.equalsIgnoreCase(cad3);
+        h = cad2.equalsIgnoreCase(cad3);//ignora mayusculas
+        y = cad2.lastIndexOf("hoy");
+        
+        //lastindex("hoy", 20)
+        //tolowercase()
+        //touppercase()
+        //trim()
+        //replace();
+        //compareto() compara cadenas mostrando cual es mayor o menor
+        //split() separador de palabras
+        
+        
         
         c = cad2.charAt(7);
         cad1 = cad2.substring(4);
@@ -53,5 +64,7 @@ public class par {
         } else {
             System.out.println("son distinta");
         }
+        
+        System.out.println(y);
     }
 }
